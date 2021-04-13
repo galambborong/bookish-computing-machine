@@ -1,8 +1,6 @@
 function sayHello() {
-  console.log('hi');
+console.log('hi');
 }
-
-module.exports = { sayHello };
 
 const alphabetReplace = (str) => {
   let indexString = '';
@@ -22,4 +20,18 @@ const alphabetReplace = (str) => {
   return indexString;
 };
 
-module.exports = { alphabetReplace };
+  
+}
+
+function pigLatin(str) {
+  if (/^[aeiou]/.test(str)) {
+    return str + 'way';
+  } else {
+    constanants = str.match(/^[^(aeiou)]+/);
+    str = str.replace(constanants[0], '');
+    return str + constanants[0] + 'ay';
+  }
+}
+
+module.exports = { sayHello, pigLatin, alphabetReplace };
+
