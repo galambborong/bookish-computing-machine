@@ -1,5 +1,15 @@
+function sayWhat() {
+  console.log("what");
+}
 function sayHello() {
-console.log('hi');
+
+  console.log("HI");
+}
+function sayDad() {
+  console.log("dad");
+}
+function sayHToilet() {
+  console.log("toilet");
 }
 
 
@@ -16,6 +26,7 @@ function pigLatin(str) {
     return str + constanants[0] + 'ay';
   }
 }
+
 
 module.exports = { sayHello, pigLatin };
 
