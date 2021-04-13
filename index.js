@@ -1,5 +1,4 @@
 function sayHello() {
-  return;
   console.log('HI');
 }
 
